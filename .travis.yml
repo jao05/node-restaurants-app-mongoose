@@ -1,4 +1,12 @@
 language: node_js
 node_js: node
 services:
-- mongodb   
+- mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: C4U7efcenRNu8OVykWsION4sM5kOolKArNmxTGoo8B+nR82WC0aLvmqJ9jeJoR9+4M7kCd8AEz08n60kI5zEBLH5twhcOtOImwozCLV2uhYo0eqFm2wyaHJZdolRgCJqs5x+BXn676qb4sAYjSGaREpPvVjDEP31XFNpUbmKIZx6bQ9UohuvBpWDJyBy5iDSi4AEyH95+jgW2HFRD8PdB6Ac3h/BbP4mlCafHFE338mBSjNTo2pUuq6HwNYUGBlGKBgiPIdnXZ/cMnlTMsT46VALGNb7PfXyWAWf3j7+EDqvB6pEMVf8i1ub28eANUHlh8k9LI2Ik5M+l6fTbmV7ePTKkqyf1+qhbB3jyfcoUAc+ixZIKNc2L6ijIraMEjA7d8aupBrDcA0YDvO5lyafmkx5oGsXxSUbddL/Eh0palEok0ey/tk85aF3BZcbIipVRwc52hLorepiN+jNcQGOtFmjI+P0iGdyimN2WjaCakXivfn9Ed5+XfqRFJvjmkMRqiK4wWudIhoNdJP8vj0jiHyiaTL/lLRM9hMsdXFSidgC28Fdfdtpsvcq9X0r/xN4+Ly1x6S2VVU0/welTxQyJcAKJuI5ZvxNqQ5kH1EvjFuyr75a4yv3CzhrW5mpAstvWhHtWpVaWkKTeOGVPqWhbE3m3uNHPJLonmlwMzDCK5E=
+  app: safe-castle-59515
+  on:
+    repo: jao05/node-restaurants-app-mongoose
+    branch: feature/with-tests
